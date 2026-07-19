@@ -18,7 +18,7 @@ jobs:
       - name: Extract source and remove archive
         shell: bash
         run: |
-          unzip -o csd-source-upload-c170100b2bed4e53aead5de082abe0d5.zip
+          unzip -o csd-source-upload-c170100b2bed4e53aead5de082abe0d5.zip || [ $? -eq 1 ]
           rm csd-source-upload-c170100b2bed4e53aead5de082abe0d5.zip
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
