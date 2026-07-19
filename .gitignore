@@ -1,0 +1,61 @@
+# Dependencies and package-manager stores
+/node_modules/
+/.pnpm-store/
+/.npm/
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Generated build and test output
+/dist/
+/.next/
+/.vinext/
+/out/
+/coverage/
+/.wrangler/
+/.vercel/
+
+# Tool caches
+/.cache/
+/.vite/
+/.turbo/
+.eslintcache
+*.tsbuildinfo
+next-env.d.ts
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Logs
+*.log
+/logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Local Codex artifacts and deployment packages
+/outputs/
+/work/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+/.idea/
+/.vscode/*
+!/.vscode/extensions.json
+!/.vscode/settings.json
+
+# Source directories intentionally kept in Git:
+# app/, build/, db/, drizzle/, examples/, public/, tests/, worker/
+# Sites configuration intentionally kept in Git: .openai/hosting.json
